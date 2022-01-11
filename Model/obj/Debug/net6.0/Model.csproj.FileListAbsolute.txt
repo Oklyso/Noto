@@ -10,3 +10,15 @@
 /Users/lyso/Documents/notes/Model/obj/Debug/net6.0/Model.dll
 /Users/lyso/Documents/notes/Model/obj/Debug/net6.0/ref/Model.dll
 /Users/lyso/Documents/notes/Model/obj/Debug/net6.0/Model.pdb
+Y:\Code\FullstackProject\Model\bin\Debug\net6.0\Model.deps.json
+Y:\Code\FullstackProject\Model\bin\Debug\net6.0\Model.dll
+Y:\Code\FullstackProject\Model\bin\Debug\net6.0\ref\Model.dll
+Y:\Code\FullstackProject\Model\bin\Debug\net6.0\Model.pdb
+Y:\Code\FullstackProject\Model\obj\Debug\net6.0\Model.csproj.AssemblyReference.cache
+Y:\Code\FullstackProject\Model\obj\Debug\net6.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+Y:\Code\FullstackProject\Model\obj\Debug\net6.0\Model.AssemblyInfoInputs.cache
+Y:\Code\FullstackProject\Model\obj\Debug\net6.0\Model.AssemblyInfo.cs
+Y:\Code\FullstackProject\Model\obj\Debug\net6.0\Model.csproj.CoreCompileInputs.cache
+Y:\Code\FullstackProject\Model\obj\Debug\net6.0\Model.dll
+Y:\Code\FullstackProject\Model\obj\Debug\net6.0\ref\Model.dll
+Y:\Code\FullstackProject\Model\obj\Debug\net6.0\Model.pdb

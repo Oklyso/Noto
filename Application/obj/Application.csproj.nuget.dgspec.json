@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lyso/Documents/notes/Application/Application.csproj": {}
+    "Y:\\Code\\FullstackProject\\Application\\Application.csproj": {}
   },
   "projects": {
-    "/Users/lyso/Documents/notes/Application/Application.csproj": {
+    "Y:\\Code\\FullstackProject\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lyso/Documents/notes/Application/Application.csproj",
+        "projectUniqueName": "Y:\\Code\\FullstackProject\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "/Users/lyso/Documents/notes/Application/Application.csproj",
-        "packagesPath": "/Users/lyso/.nuget/packages/",
-        "outputPath": "/Users/lyso/Documents/notes/Application/obj/",
+        "projectPath": "Y:\\Code\\FullstackProject\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\Ole\\.nuget\\packages\\",
+        "outputPath": "Y:\\Code\\FullstackProject\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/lyso/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ole\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -26,11 +26,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/lyso/Documents/notes/Model/Model.csproj": {
-                "projectPath": "/Users/lyso/Documents/notes/Model/Model.csproj"
+              "Y:\\Code\\FullstackProject\\Model\\Model.csproj": {
+                "projectPath": "Y:\\Code\\FullstackProject\\Model\\Model.csproj"
               },
-              "/Users/lyso/Documents/notes/Server/Server.csproj": {
-                "projectPath": "/Users/lyso/Documents/notes/Server/Server.csproj"
+              "Y:\\Code\\FullstackProject\\Server\\Server.csproj": {
+                "projectPath": "Y:\\Code\\FullstackProject\\Server\\Server.csproj"
               }
             }
           }
@@ -45,6 +45,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "EntityFramework": {
               "target": "Package",
               "version": "[6.4.4, )"
@@ -73,21 +77,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/lyso/Documents/notes/Model/Model.csproj": {
+    "Y:\\Code\\FullstackProject\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lyso/Documents/notes/Model/Model.csproj",
+        "projectUniqueName": "Y:\\Code\\FullstackProject\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "/Users/lyso/Documents/notes/Model/Model.csproj",
-        "packagesPath": "/Users/lyso/.nuget/packages/",
-        "outputPath": "/Users/lyso/Documents/notes/Model/obj/",
+        "projectPath": "Y:\\Code\\FullstackProject\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\Ole\\.nuget\\packages\\",
+        "outputPath": "Y:\\Code\\FullstackProject\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/lyso/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ole\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -110,6 +114,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -125,21 +135,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/lyso/Documents/notes/Server/Server.csproj": {
+    "Y:\\Code\\FullstackProject\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lyso/Documents/notes/Server/Server.csproj",
+        "projectUniqueName": "Y:\\Code\\FullstackProject\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "/Users/lyso/Documents/notes/Server/Server.csproj",
-        "packagesPath": "/Users/lyso/.nuget/packages/",
-        "outputPath": "/Users/lyso/Documents/notes/Server/obj/",
+        "projectPath": "Y:\\Code\\FullstackProject\\Server\\Server.csproj",
+        "packagesPath": "C:\\Users\\Ole\\.nuget\\packages\\",
+        "outputPath": "Y:\\Code\\FullstackProject\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/lyso/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ole\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -151,8 +161,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/lyso/Documents/notes/Model/Model.csproj": {
-                "projectPath": "/Users/lyso/Documents/notes/Model/Model.csproj"
+              "Y:\\Code\\FullstackProject\\Model\\Model.csproj": {
+                "projectPath": "Y:\\Code\\FullstackProject\\Model\\Model.csproj"
               }
             }
           }
@@ -187,7 +197,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

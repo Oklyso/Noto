@@ -1,34 +1,67 @@
-import React, { Fragment, useEffect,useState } from 'react';
-import { Note } from '../models/note';
-import axios from 'axios';
+import React, { useEffect } from 'react';
 import { Container } from 'semantic-ui-react';
 import NavBar from './NavBar';
-import NoteDashboard from '../../features/NoteDashboard';
+
+import {Route, Switch, useLocation } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import NoteDetails from '../../features/notes/detailed/NoteDetails';
+import NoteDashboard from '../../features/notes/NoteDashboard';
+import { observer } from 'mobx-react-lite';
+import NoteForm from '../../features/notes/form/NoteForm';
+import HomePage from '../../features/landing/homepage';
+import NotFound from '../../features/errors/NotFound';
+import LoginForm from '../../features/users/LoginForm';
+import { useStore } from '../stores/store';
+import Loading from './Loading';
+import ModalContainer from '../common/modals/ModalContainer';
 
 function App() {
+  const location = useLocation();
+  const {commonStore, userStore} = useStore();
 
-  const [notes,setNotes] = useState<Note[]>([]); 
-  useEffect( () =>{ 
-  axios.get<Note[]>("http://localhost:7000/api/notes")
-  .then(response =>{
-    setNotes(response.data);
-  })
-},[])
+  useEffect(() => {
+    if(commonStore.token){
+      userStore.getUser().finally(() => commonStore.setAppLoaded())
+    } else {
+      commonStore.setAppLoaded();
+    }
+  },[commonStore,userStore])
+
+  if(!commonStore.appLoaded) return <Loading content='Loading App...' />;
 
   return (
-    <Fragment>
-    <NavBar />
-    <Container style={{marginTop:'7em'}}>
+    <>
+      <Route exact path='/' component={HomePage}/>
+      <ToastContainer position='bottom-right' hideProgressBar /> 
+      <ModalContainer />
+      <Route 
+      path={'/(.+)'}
+      render={() => (
+        <>
+        
+        <NavBar/>
+      <Container style={{marginTop:'7em'}}>
+      <Switch>
+        <Route exact path='/notes' component={NoteDashboard}/>
+        <Route path='/notes/:id' component={NoteDetails}/>
+        <Route path='/login' component={LoginForm}/>
+        
+        <Route key={location.key} path={['/createNote','/manage/:id']} component={NoteForm}/>
+        <Route component={NotFound} />
 
-    <NoteDashboard notes={notes}/>
+      </Switch>
+      
+      </Container>
+        
+        </>
 
-    </Container>
+      )}
+      ></Route>
+      
+        </>
 
-
-
-
-    </Fragment>
   );
 }
 
-export default App;
+export default observer(App);
+
