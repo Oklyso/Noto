@@ -17,10 +17,11 @@ Se [denne linken](https://notonoteapp.herokuapp.com) for å prøve applikasjonen
 Prosjektet er bygd opp med Clean Architecture,CQRS, og Mediator som designmønster. 
 Valgene av disse mønstrene er tatt for å kunne balansere funksjonalitet i en notat-basert app, samt for å kunne holde applikasjonen nokså sikker.
 
+
 Prosjektet bruker også et parl tredjeparts-bibliotek som:
 * Semantic UI ( Som et designrammeverk)
 * MobX  + Formik ( for State Management)
-
+* PostgreSQL / Heroku (for hosting)
 Utenom disse er det meste ellers innebygd React eller .NET-funksjonalitet.
 
 
