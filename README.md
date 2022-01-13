@@ -4,7 +4,7 @@
 Applikasjonen er laget med hensikten å ha en lett-tilgjengelig skybasert måte å lagre notater med  grunnleggende Markdown-funksjonalitet.
 
 ## Applikasjon
-Besøk «Environments»-taben i Github eller se [denne linken](https://notonoteapp.herokuapp.com) for å prøve applikasjonen.
+Se [denne linken](https://notonoteapp.herokuapp.com) for å prøve applikasjonen.
 
 ## Lokal installasjon
 1. Clone repoet
