@@ -26,4 +26,4 @@ Utenom disse er det meste ellers innebygd React eller .NET-funksjonalitet.
 
 ## Merkverdigheter
 [Noto Security Rating](https://www.dropbox.com/s/dzd0m01wpicg67l/Skjermbilde%202022-01-13%20kl.%2022.51.43.png)
-[Youtube Security Rating](https://www.dropbox.com/s/wwsmot6mp5n2vz3/Skjermbilde%202022-01-13%20kl.%2023.05.46.png?
+[Youtube Security Rating](https://www.dropbox.com/s/wwsmot6mp5n2vz3/Skjermbilde%202022-01-13%20kl.%2023.05.46.png)
