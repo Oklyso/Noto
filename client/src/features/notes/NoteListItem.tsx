@@ -1,8 +1,13 @@
 import { format } from "date-fns";
 import React from "react";
+import ReactMarkdown from "react-markdown";
 import { Link } from "react-router-dom";
+import remarkGfm from "remark-gfm";
 import { Button, Icon, Item, Segment } from "semantic-ui-react";
 import { Note } from "../../app/models/note";
+import {PrismAsync as SyntaxHighlighter} from 'react-syntax-highlighter';
+//import {tomorrow} from 'react-syntax-highlighter/dist/esm/styles/prism'
+import {materialLight} from 'react-syntax-highlighter/dist/esm/styles/prism'
 
 interface Props{
     note: Note
@@ -29,7 +34,32 @@ export default function NoteListItem({note} : Props) {
                         </Item.Group>
                         <Segment compact raised clearing>
                         <span style={{overflowWrap: 'break-word'}}>
-                            {note.body}
+                         <ReactMarkdown
+                                remarkPlugins={[remarkGfm]}
+                                children={note.body}
+                                
+                                components={{
+
+                            // This SyntaxHighlighter-addition comes straight from their github.
+
+                                code({node, inline, className, children, ...props}) {
+                                    const match = /language-(\w+)/.exec(className || '')
+                                    return !inline && match ? (
+                                    <SyntaxHighlighter
+                                        children={String(children).replace(/\n$/, '')}
+                                        style={materialLight}
+                                        language={match[1]}
+                                        PreTag="div"
+                                        {...props}
+                                    />
+                                    ) : (
+                                    <code className={className} {...props}>
+                                        {children}
+                                    </code>
+                                    )
+                                }
+                                }}
+                            />
                             
                         </span>
                     </Segment>
