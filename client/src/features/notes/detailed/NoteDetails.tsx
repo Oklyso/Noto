@@ -27,7 +27,7 @@ useEffect(() => {
   if(loadingInitial || !note) return <Loading />;
   
     return(
-      <Grid className='ui center aligned'>
+      <Grid centered>
         <Grid.Column width={10} >
           <NoteDetailedHeader note={note}/>
           <NoteDetailedInfo note={note} />

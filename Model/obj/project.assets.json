@@ -735,19 +735,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ole\\.nuget\\packages\\": {}
+    "/Users/lyso/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "y:\\Code\\FullstackProject\\Model\\Model.csproj",
+      "projectUniqueName": "/Users/lyso/Documents/FullstackProject/Model/Model.csproj",
       "projectName": "Model",
-      "projectPath": "y:\\Code\\FullstackProject\\Model\\Model.csproj",
-      "packagesPath": "C:\\Users\\Ole\\.nuget\\packages\\",
-      "outputPath": "y:\\Code\\FullstackProject\\Model\\obj\\",
+      "projectPath": "/Users/lyso/Documents/FullstackProject/Model/Model.csproj",
+      "packagesPath": "/Users/lyso/.nuget/packages/",
+      "outputPath": "/Users/lyso/Documents/FullstackProject/Model/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ole\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/lyso/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -791,7 +791,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
       }
     }
   }

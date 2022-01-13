@@ -35,16 +35,22 @@ export default observer(function NoteDetailedInfo({note}: Props) {
                     </Grid.Column>
                 </Grid>
             </Segment>
+            {note.location ? (
             <Segment attached>
                 <Grid verticalAlign='middle'>
                     <Grid.Column width={1}>
                         <Icon name='marker' size='large' style={{color:'#5B84B1FF'}}/>
                     </Grid.Column>
-                    <Grid.Column width={11}>
+                    
+                        <Grid.Column width={11}>
                         <span>{note.location}</span>
                     </Grid.Column>
+                  
                 </Grid>
             </Segment>
+              ):null
+            }
+                
         </Segment.Group>
     )
 })

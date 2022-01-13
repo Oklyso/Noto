@@ -23,7 +23,7 @@ export default observer(function NoteDashboard(){
 
     
     return(
-        <Grid className="ui center aligned">
+        <Grid centered>
             <Grid.Column  width='10' >
         <NoteList/>
             </Grid.Column>
