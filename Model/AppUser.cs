@@ -6,7 +6,7 @@ namespace Model
     {
         public string DisplayName { get; set; }
         
-        public ICollection<NoteUser> Notes { get; set; }
+        
         
         
     }

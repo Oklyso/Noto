@@ -2,6 +2,7 @@ import { format } from "date-fns";
 import { makeAutoObservable, runInAction } from "mobx";
 import agent from "../api/agent";
 import { Note } from "../models/note";
+import { User } from "../models/user";
 
 
 export default class NoteStore {

@@ -23,6 +23,7 @@ namespace Application.Notes
 
             public async Task<Result<Unit>> Handle(Command request, CancellationToken cancellationToken)
             {
+                
                 _context.Notes.Add(request.Note);
                 var result = await _context.SaveChangesAsync() > 0;
                 if(!result) return Result<Unit>.Failure("Failed to create note");

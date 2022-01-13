@@ -6,11 +6,7 @@ import { User, UserFormValues } from '../models/user';
 import { store } from '../stores/store';
 
 
-const sleep = (delay:number) =>{
-    return new Promise((resolve) =>{
-        setTimeout(resolve,delay)
-    })
-}
+
 
 axios.defaults.baseURL = 'http://localhost:7000/api';
 
@@ -22,7 +18,7 @@ axios.interceptors.request.use(config => {
 
 axios.interceptors.response.use(async response =>{
   
-        await sleep(1000);
+        
         return response;
      
 },(error:AxiosError) => {

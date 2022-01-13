@@ -36,12 +36,14 @@ logout = () =>{
     window.localStorage.removeItem('jwt');
     this.user = null;
     history.push('/');
+    window.location.reload();
 }
 
     getUser = async () => {
         try{
             const user = await agent.Account.current();
             runInAction(() => this.user = user);
+            
 
         }catch(e){
             console.log(e);

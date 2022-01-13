@@ -10,7 +10,7 @@ namespace Model
         public string Category {get;set;}
         public string Location {get;set;}
 
-        public ICollection<NoteUser> Owners { get; set; }
+       public string Email {get;set;} 
 
         
     }

@@ -2,6 +2,7 @@ using Application.Notes;
 using Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace API.Controllers
 {
@@ -11,9 +12,11 @@ namespace API.Controllers
 
 
         [HttpGet]
-        public async Task<ActionResult<List<Note>>> GetNotes (){
+        public async Task<ActionResult<List<Note>>> GetNotes (string email){
+            email = User.FindFirstValue(ClaimTypes.Email);
             
-            return await Mediator.Send(new List.Query());
+            
+            return await Mediator.Send(new List.Query{Email = email});
         }
         
         [HttpGet("{id}")] 
@@ -26,6 +29,8 @@ namespace API.Controllers
 
         [HttpPost]
         public async Task<IActionResult> CreateNote(Note note) {
+            note.Email = User.FindFirstValue(ClaimTypes.Email);
+            
             return HandleResult(await Mediator.Send(new Create.Command{Note = note}));
         }
 
